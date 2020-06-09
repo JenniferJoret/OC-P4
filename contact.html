@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+
+	<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- <script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js"></script> -->
+	<title>page2</title>
+
+
+	<!-- Analytics -->
+
+	<!-- Analytics END -->
+
+</head>
+
+<body class="container-fluid p-0 no-gutters">
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light px-0 py-4 col-lg-6 mx-lg-auto bg-white">
+			<a class="navbar-brand px-4" href="index.html"><img src="img/la-chouette-agence.png"
+					alt="Logo de La Chouette Agence" /></a>
+			<button class="navbar-toggler px-4" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse px-lg-4" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-md-auto">
+					<li class="nav-item active pl-4">
+						<a class="nav-link" href="index.html">Accueil </a>
+					</li>
+					<li class="nav-item active pl-4">
+						<a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="page-container">
+
+		<!-- bloc-6 -->
+		<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+			<div class="container bloc-lg">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 class="text-center hero-bloc-text tc-white">
+							Parlons web design !
+						</h1>
+						<p class="text-center mg-lg tc-white tight-width-whitespace">
+							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bloc-6 END -->
+
+		<!-- bloc-7 -->
+		<div class="bloc bgc-white l-bloc" id="bloc-7">
+			<div class="container bloc-lg">
+				<div class="row">
+					<div class="col-sm-6">
+						<form id="form_1" novalidate success-msg="Your message has been sent."
+							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+							<div class="form-group">
+								<label>
+									Nom
+								</label>
+								<input id="name" class="form-control" required />
+							</div>
+							<div class="form-group">
+								<label>
+									Adresse email
+								</label>
+								<input id="email" class="form-control" type="email" required />
+							</div>
+							<div class="form-group">
+								<label>
+									Comment nous avez-vous connu ?
+								</label>
+								<input class="form-control" type="email" required id="input_504" />
+							</div>
+							<div class="form-group">
+								<label>
+									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+								</label><textarea id="message" class="form-control" rows="4" cols="50"
+									required></textarea>
+							</div>
+							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+								type="submit">
+								Envoyer
+							</button>
+						</form>
+					</div>
+					<div class="col-sm-6">
+						<p>
+							contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi
+							au vendredi<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- bloc-7 END -->
+
+		<!-- ScrollToTop Button -->
+		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
+				class="fa fa-chevron-up"></span></a>
+		<!-- ScrollToTop Button END-->
+
+	</main>
+	<!-- Footer - bloc-8 -->
+	<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+		<div class="container bloc-sm">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="text-center white">
+						La chouette agence - Agence web basée à Lyon.<br>
+					</p>
+					<div class="row row-no-gutters social">
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center">
+								<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

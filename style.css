@@ -1,4 +1,11 @@
-/* body {
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 a,
 button {
@@ -19,7 +26,7 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-*/
+
 .bloc {
     width: 100%;
     clear: both;
@@ -31,8 +38,39 @@ a:hover {
     background-size: cover;
     position: relative;
 }
-/*
 
+.bloc .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bloc-lg {
+    padding: 100px 50px;
+}
+
+.bloc-md {
+    padding: 50px;
+}
+
+.bloc-sm {
+    padding: 20px 50px;
+}
+
+.bg-center,
+.bg-l-edge,
+.bg-r-edge,
+.bg-t-edge,
+.bg-b-edge,
+.bg-tl-edge,
+.bg-bl-edge,
+.bg-tr-edge,
+.bg-br-edge,
+.bg-repeat {
+    -webkit-background-size: auto!important;
+    -moz-background-size: auto!important;
+    -o-background-size: auto!important;
+    background-size: auto!important;
+}
 
 .bg-repeat {
     background: repeat;
@@ -41,7 +79,7 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
-*/
+
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -52,15 +90,14 @@ a:hover {
     right: 0;
 }
 
-
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
-/*
-
-
+.b-parallax {
+    background-attachment: fixed;
+}
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
@@ -116,9 +153,9 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.d-bloc .navbar-toggle .icon-bar {
+/* .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
-}
+} */
 
 .d-bloc .btn-wire,
 .d-bloc .btn-wire:hover {
@@ -215,7 +252,7 @@ a:hover {
     color: rgba(0, 0, 0, 1);
 }
 
-.l-bloc .navbar-toggle .icon-bar {
+.l-bloc .icon-bar {
     color: rgba(0, 0, 0, .6);
 }
 
@@ -248,126 +285,6 @@ a:hover {
 
 #bloc-1-hero h1 {
     font-size: 32px;
-}
-
-.navbar {
-    margin-bottom: 0;
-    z-index: 1;
-}
-
-
-.navbar-brand img[src$=svg] {
-    min-width: 100px;
-}
-
-.nav-center .navbar-brand img {
-    margin: 0;
-}
-
-.nav > li {
-    float: left;
-    margin-top: 4px;
-    font-size: 16px;
-}
-
-
-
-.navbar-toggle:hover {
-    background: transparent!important;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: rgba(0, 0, 0, .5);
-    width: 26px;
-}
-
-.nav-invert .navbar .nav {
-    float: left;
-}
-
-.nav-invert .navbar-header,
-.nav-invert .navbar-brand {
-    float: right;
-    position: relative;
-    z-index: 2;
-}
-
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
-
-.nav > li > .dropdown a {
-    background: none!important;
-    display: block;
-    padding: 14px 15px;
-}
-
-nav .caret {
-    margin: 0 5px;
-}
-
-.dropdown-menu .dropdown-menu {
-    top: -8px;
-    left: 100%;
-}
-
-.dropdown-menu .dropmenu-flow-right {
-    top: 100%;
-    left: 0;
-    margin-left: -1px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.dropdown-menu .dropdown span {
-    border: 4px solid black;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
-    float: right;
-}
-
-.mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 .mg-lg {
@@ -718,11 +635,9 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.ltc-white {
-    color: #FFFFFF!important;
-}
 
-.ltc-white:hover {
+
+.text-white:hover {
     color: #cccccc!important;
 }
 
@@ -738,10 +653,23 @@ h4 {
     color: #364577!important;
     border-color: #364577!important;
 }
-*/
 
+.bg-dots-bg {
+    background-image: url("img/dots-bg.png");
+}
 
-/*
+.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.png");
+}
+
+.bg-banniere {
+    background-image: url("img/la-chouette-agence-banniere.jpg");
+}
+
+.bg-presentation {
+    background-image: url("img/image-de-presentation.jpg");
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -777,7 +705,34 @@ h4 {
     }
 }
 
-
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .page-container,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
+    .bloc-group,
+    .bloc-group .bloc {
+        display: block;
+        width: 100%;
+    }
+    .bloc-fill-screen .fill-bloc-top-edge,
+    .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
+}
 
 @media (max-width: 767px) {
     .page-container {
@@ -845,24 +800,24 @@ h4 {
         left: -1px;
         right: -1px;
     }
-    .navbar-collapse {
+    /* .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
-    }
+    } */
     .navbar-brand img {
         max-height: 40px;
         width: auto;
     }
-    .nav-invert .navbar-header {
+    /* .nav-invert .navbar-header {
         float: none;
         width: 100%;
-    }
-    .nav-invert .navbar-toggle {
+    } */
+    /* .nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;
-    }
+    } */
     .bloc {
         padding-left: 0;
         padding-right: 0;
@@ -928,53 +883,5 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
-    }
-} */
-
-
-
-/*---------GESTION DES BACKGROUNDS-*/
-.b-parallax {
-    background-attachment: fixed;
-}
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
-.bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
-}
-
-.bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
-}
-
-/*--------NAVBAR-------*/
-
-.navbar-brand img {
-    height: 40px;
-}
-
-.navbar .show li {
-    background-color: #F2F2F2;
-    padding: none !important;
-    border-top: 1px solid #CCC;
-    border-bottom: 1px solid #ccc;
-}
-.navbar .show li:hover {
-    background-color: #ebebeb;
-}
-
-.navbar-light .navbar-toggler {
-    border: none;
-}
-
-@media screen and (max-width: 991px) {
-    .b-parallax {
-        background-attachment: scroll;
     }
 }

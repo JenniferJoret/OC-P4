@@ -397,7 +397,8 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%);
     -webkit-transform: translateY(-50%);
 }
 
@@ -408,7 +409,7 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal {
-    display: flex;
+    display: flex!important;
     align-items: center;
 }
 
@@ -478,6 +479,7 @@ a[data-lightbox]:hover img {
 
 .snapshot-lb .modal-body {
     padding-bottom: 45px;
+    text-align: center;
 }
 
 .snapshot-lb .lightbox-caption {
@@ -502,7 +504,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .hero-bloc-text {
@@ -573,17 +575,10 @@ h1 {
     color: #333333!important;
 }
 
-h4 {
-    color: #333333!important;
-}
 
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
-}
-
-.white {
-    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -739,7 +734,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    h1,
+    /* h1,
     h2,
     h3,
     h4,
@@ -749,7 +744,7 @@ h4 {
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
-    }
+    } */
     .b-parallax {
         background-attachment: scroll;
     }

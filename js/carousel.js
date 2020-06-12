@@ -25,20 +25,20 @@ function setUpLightBox() {
                 1 == a.attr("data-autoplay") && (l = "autoplay"), $("#lightbox-image, .lightbox-caption").hide(), $("#lightbox-video-container").show().html("<video controls " + l + ' class="embed-responsive-item"><source id="lightbox-video" src="' + o + '" type="video/mp4"></video>')
             } else $("#lightbox-image").attr("src", o).show(), $(".lightbox-caption").html(a.attr("data-caption")).show(), $("#lightbox-video-container").hide();
             targetLightbox = a, $(".next-lightbox, .prev-lightbox").hide(), "no-gallery-set" == e ? ($("a[data-lightbox]").index(a) != $("a[data-lightbox]").length - 1 && $(".next-lightbox").show(), $("a[data-lightbox]").index(a) > 0 && $(".prev-lightbox").show()) : ($('a[data-gallery-id="' + e + '"]').index(a) != $('a[data-gallery-id="' + e + '"]').length - 1 && $(".next-lightbox").show(), $('a[data-gallery-id="' + e + '"]').index(a) > 0 && $(".prev-lightbox").show())
-        })
-    }
+    })
+}
 
-    function addSwipeSupport() {
+function addSwipeSupport() {
         $(".carousel-inner").length && $(".carousel-inner").swipe({
-            swipeLeft: function (t, e, i, a, o) {
-                $(this).parent().carousel("next")
-            },
-            swipeRight: function () {
-                $(this).parent().carousel("prev")
-            },
-            threshold: 0
-        })
-    }
+        swipeLeft: function (t, e, i, a, o) {
+            $(this).parent().carousel("next")
+        },
+        swipeRight: function () {
+            $(this).parent().carousel("prev")
+        },
+        threshold: 0
+    })
+}
 
     function addKeyBoardSupport() {
         $(window).keydown(function (t) {

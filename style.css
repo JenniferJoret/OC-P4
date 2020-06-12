@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body {
     margin: 0;
     padding: 0;
@@ -272,17 +275,6 @@ a:hover {
     margin-top: 80px;
 }
 
-.row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
-
 #bloc-1-hero h1 {
     font-size: 32px;
 }
@@ -363,7 +355,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -575,7 +567,6 @@ h1 {
     color: #333333!important;
 }
 
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -630,8 +621,6 @@ h1 {
     color: #FFFFFF!important;
 }
 
-
-
 .text-white:hover {
     color: #cccccc!important;
 }
@@ -664,6 +653,31 @@ h1 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
 }
+
+#g-maps-lca{
+min-height: 300px;
+height: auto;
+width: 100%;
+}
+.contact-info{
+background-color: #F3976C;
+
+border-radius: 20px;
+}
+
+.contact-info h2{
+    color: white!important;
+    text-decoration: underline;
+}
+.contact-info p{
+    font-size: 1em;
+    text-align: left;
+}
+.contact-info span{
+    font-weight: bold!important;
+    text-decoration: underline;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -734,17 +748,6 @@ h1 {
         overflow-x: hidden;
         position: relative;
     }
-    /* h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
-    } */
     .b-parallax {
         background-attachment: scroll;
     }
@@ -795,24 +798,10 @@ h1 {
         left: -1px;
         right: -1px;
     }
-    /* .navbar-collapse {
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    } */
     .navbar-brand img {
         max-height: 40px;
         width: auto;
     }
-    /* .nav-invert .navbar-header {
-        float: none;
-        width: 100%;
-    } */
-    /* .nav-invert .navbar-toggle {
-        float: left;
-        margin-left: 10px;
-    } */
     .bloc {
         padding-left: 0;
         padding-right: 0;

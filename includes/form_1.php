@@ -9,15 +9,15 @@
 	$input_504 = $_POST['input_504'];
 	$message = $_POST['message'];
 	
-	$to = 'receiver@yoursite.com'; // Email submissions are sent to this email
+	$to = 'contact@lachouetteagence.com'; // Email submissions are sent to this email
 
 	// Create email	
-	$email_subject = "Message from your website";
-	$email_body = "You have received a new message. \n\n".
-				  "Name: $name \nEmail: $email \nInput_504: $input_504 \nMessage: $message \n";
+	$email_subject = "Message de votre site web - La chouette agence";
+	$email_body = "Vous avez reçu un nouveau message. \n\n".
+				  "Nom: $name \Mail: $email \nComment ont-ils entendu parler de vous: $input_504 \nMessage: $message \n";
 	$headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=UTF-8\r\n";	
-	$headers .= "From: contact@yoursite.com\n";
-	$headers .= "Reply-To: $input_504";	
+	$headers .= "De : contact@lachouetteagence.com\n";
+	$headers .= "Répondre à : $email";	
 	
 	mail($to,$email_subject,$email_body,$headers); // Post message
 	return true;			

@@ -275,6 +275,7 @@ a[data-lightbox]:hover img {
 
 .tc-white {
     color: #F3976C !important;
+    text-shadow:0px 0px 1em #000, 0 0 .5em black;
 }
 
 .btn-atomic-tangerine {
@@ -299,10 +300,6 @@ a[data-lightbox]:hover img {
 }
 
 /*-----------------------BACKGROUNDS-----------------*/
-.bgc-white {
-    background-color: #FFFFFF;
-}
-
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
@@ -311,7 +308,7 @@ a[data-lightbox]:hover img {
     background-color: #F3976C;
 }
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 40px 40px 40px;
 }
 
@@ -360,7 +357,6 @@ a[data-lightbox]:hover img {
 }
 .contact-info span {
     font-weight: bold !important;
-    text-decoration: underline;
 }
 
 /*-----------------------------------MQ-----------------------------*/

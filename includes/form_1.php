@@ -9,7 +9,7 @@
 	$input_504 = $_POST['input_504'];
 	$message = $_POST['message'];
 	
-	$to = 'contact@jennifer-joret.fr'; 
+	$to = 'contact@lachouetteagence.com'; 
 
 
 	$email_subject = "Message de votre site web - La chouette agence";

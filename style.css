@@ -6,11 +6,13 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none !important;
+    color: #303030!important;
 }
 
 a:hover {
     text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 
 .bloc {
@@ -97,16 +99,17 @@ button {
 
 .icon-md {
     font-size: 30px !important;
+    color:#303030;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, .3);
+}
+  .icon-md:hover{  
+    color:white!important;
 }
 
 .icon-lg {
     font-size: 60px !important;
-}
-
-.sm-shadow {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
-
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
@@ -128,10 +131,6 @@ button {
     margin-top: 6px;
 }
 
-.showScrollTop {
-    font-size: 14px;
-    opacity: 1;
-}
 
 /*----------------LIGHTBOX----------------*/
 a[data-lightbox] {
@@ -192,7 +191,7 @@ a[data-lightbox]:hover img {
 }
 
 .close-lightbox {
-    color: #FFF;
+    color: rgb(136, 134, 134);
     font-size: 30px;
     position: absolute;
     top: 20px;
@@ -244,7 +243,7 @@ a[data-lightbox]:hover img {
     color: rgba(0, 0, 0, .5);
     background: none;
 }
-
+/*----------------------------------------------*/
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -263,7 +262,6 @@ a[data-lightbox]:hover img {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF !important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -275,30 +273,16 @@ a[data-lightbox]:hover img {
     text-decoration: underline !important;
 }
 
-.bgc-white {
-    background-color: #FFFFFF;
-}
-
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
-}
-
 .tc-white {
     color: #F3976C !important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF !important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956 !important;
-    color: #FFFFFF !important;
 }
 
 .ltc-atomic-tangerine {
@@ -315,6 +299,17 @@ a[data-lightbox]:hover img {
 }
 
 /*-----------------------BACKGROUNDS-----------------*/
+.bgc-white {
+    background-color: #FFFFFF;
+}
+
+.bgc-dark-slate-blue {
+    background-color: #364577;
+}
+
+.bgc-atomic-tangerine {
+    background-color: #F3976C;
+}
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
@@ -342,6 +337,13 @@ a[data-lightbox]:hover img {
     min-height: 300px;
     height: auto;
     width: 100%;
+    border: none;
+}
+
+/*-formulaire-*/
+.form-control:focus, .btn:focus {
+    border-color: #F3976C;
+    box-shadow: 0 0 0 0.2rem rgba(129, 37, 0, 0.25);
 }
 
 /*-------carte contact------*/
@@ -349,17 +351,13 @@ a[data-lightbox]:hover img {
     background-color: #F3976C;
     border-radius: 20px;
 }
-
 .contact-info h2 {
-    color: white !important;
     text-decoration: underline;
 }
-
 .contact-info p {
     font-size: 1em;
     text-align: left;
 }
-
 .contact-info span {
     font-weight: bold !important;
     text-decoration: underline;

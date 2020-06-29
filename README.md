@@ -23,7 +23,11 @@
 
 ## CARACTÉRISTIQUES TECHNIQUES
 
-Le site a été réalisé avec **HTML5**, **CSS**, et **Javascript**
+Le site a été réalisé avec **HTML5**, **CSS**, et **JavaScript**
+Il utilise également **Bootstrap 4**, **ET-Line**, **Fontawesome**, et **jqBootstrapValidation** pour le formulaire. 
+
+> Note concernant **jqBootstrapValidation** : Le fichier initial est en anglais. À l'heure actuelle, les modifications en FR sont faites directement dans le fichier .js. Attention donc lors des possibles mises à jour à le remettre en français.
+Pour les traductions, voir [ici](http://bootstrapvalidator.votintsev.ru/getting-started/#language-packages).
 
 ## COMPATIBILITÉ
 

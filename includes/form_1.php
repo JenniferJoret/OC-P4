@@ -9,8 +9,8 @@
 	$input_504 = $_POST['input_504'];
 	$message = $_POST['message'];
 	
-	$to = 'contact@lachouetteagence.com';  
-
+	$to = 'JJ-TestWebsites@outlook.fr';  
+// contact@lachouetteagence.com
 	$email_subject = "Message de votre site web - La chouette agence";
 	$email_body = "Vous avez reçu un nouveau message. \n\n"."Nom : $name \nMail : $email \n\nComment ont-ils entendu parler de vous :\n $input_504 \n\nMessage: \n$message \n";
 	$headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=UTF-8\r\n";	

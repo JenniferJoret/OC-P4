@@ -23,7 +23,9 @@
 
 ## CARACTÉRISTIQUES TECHNIQUES
 
-Le site a été réalisé avec **HTML5**, **CSS**, et **JavaScript**
+Le site a été réalisé avec **HTML5**, **CSS**, et **JavaScript**.
+
+
 Il utilise également **Bootstrap 4**, **ET-Line**, **Fontawesome**, et **jqBootstrapValidation** pour le formulaire. 
 
 > Note concernant **jqBootstrapValidation** : Le fichier initial est en anglais. À l'heure actuelle, les modifications en FR sont faites directement dans le fichier .js. Attention donc lors des possibles mises à jour à le remettre en français.
@@ -31,7 +33,7 @@ Pour les traductions, voir [ici](http://bootstrapvalidator.votintsev.ru/getting-
 
 ## COMPATIBILITÉ
 
-À ce jour, le site est compatible avec les dernières versions en date de Chrome, Edge, Firefox, et Safari.
+À ce jour, le site est compatible avec les dernières versions en date de Chrome, Edge, Firefox, Internet Explorer, et Safari.
 
 ## CONTACT
 Vous pouvez joindre l'équipe de La chouette agence à l'adresse suivante : contact@lachouetteagence.com.  
